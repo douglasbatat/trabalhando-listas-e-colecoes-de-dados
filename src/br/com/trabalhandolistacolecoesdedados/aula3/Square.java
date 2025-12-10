@@ -1,3 +1,5 @@
+package br.com.trabalhandolistacolecoesdedados.aula3;
+
 public class Square implements Form {
     double side;
     double width;

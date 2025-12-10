@@ -1,3 +1,5 @@
+package br.com.trabalhandolistacolecoesdedados.aula3;
+
 public class Animal {
     private String phylum;
     private String classAnimal;
