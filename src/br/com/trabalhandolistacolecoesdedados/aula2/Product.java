@@ -11,6 +11,10 @@ public class Product {
         this.quantity = quantity;
     }
 
+    public double getPrice() {
+        return price;
+    }
+
     public String toString() {
         return "br.com.trabalhandolistacolecoesdedados.aula2.Product{" +
                 "name='" + name + '\'' +

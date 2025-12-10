@@ -4,7 +4,9 @@ import br.com.trabalhandolistacolecoesdedados.aula2.Product;
 import br.com.trabalhandolistacolecoesdedados.aula3.*;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class Principal {
     public static void main(String[] args) {
@@ -51,7 +53,64 @@ public class Principal {
         System.out.println(products);
         System.out.println(perishableProduct);
 
+        //Aula 03: Lista de objetos distintos
 
+        ////Exercício 1
+        List<String> listStrings = new ArrayList<>();
+        listStrings.add("Cachorro");
+        listStrings.add("Gato");
+        listStrings.add("Papagaio");
+        System.out.println("\nImprimendo resultado do exercício da aula 3\n");
+        System.out.println("Resultado do Exercício 1\n");
+        listStrings.forEach(System.out::println);
+
+        ////Exercício 2 e 3
+        Animal myPet1 = new Dog("Canidea", "Canis", "Canis lupus", "Poodle", "Bolinha", 14);
+        Animal myPet2 = new Cat("Felidae", "Felis", "Felis catus", "Siamese", "Mia", 3);
+
+        System.out.println("\nResultado do Exercício 2 e 3\n");
+        if (myPet2 instanceof Dog) {
+            var dog = (Dog) myPet2;
+        } else {
+            System.out.println("Não é um cachorro");
+        }
+
+        ////Exercício 4
+        double sumPrices = 0;
+        for (Product product : products) {
+            sumPrices += product.getPrice();
+        }
+
+        double midiumPrice = sumPrices / products.size();
+        System.out.println("\nResultado do Exercício 4\n");
+        System.out.println("Preço médio dos produtos: " + midiumPrice);
+
+        ////Exercício 5
+        var form1 = new Circle(5);
+        var form2 = new Square(4, 4);
+        var form3 = new Square(3, 3);
+        var form4 = new Circle(10);
+
+        List<Form> forms = new ArrayList<>(List.of(form1, form2, form3, form4));
+        System.out.println("\nResultado do Exercício 5\n");
+        for (Form form : forms) {
+            System.out.println("Area calculada. " + form.calcularArea());
+        }
+
+        ////Exercício 6
+        System.out.println("\nResultado do Exercício 6\n");
+
+        var account1 = new BankAccount( 123586, 1500.0);
+        var account2 = new BankAccount( 965874, 2500.0);
+        var account3 = new BankAccount( 315698, 500.0);
+
+        List<BankAccount> accounts = new ArrayList<>(List.of(account1, account2, account3));
+
+        Optional<BankAccount> accountWithHighestBalance = accounts.stream().max(Comparator.comparingDouble(BankAccount::getBalance));
+        accountWithHighestBalance.ifPresent(account ->
+                System.out.println("Conta com maior saldo: " + account)
+        );
 
     }
 }
+
