@@ -1,3 +1,5 @@
+package br.com.trabalhandolistacolecoesdedados.aula3;
+
 public class Cat extends Animal {
     private String breed;
     private String name;
@@ -11,7 +13,7 @@ public class Cat extends Animal {
     }
 
     public String toString() {
-        return "Cat{" +
+        return "br.com.trabalhandolistacolecoesdedados.aula3.Cat{" +
                 "breed='" + breed + '\'' +
                 ", name='" + name + '\'' +
                 ", age=" + age +

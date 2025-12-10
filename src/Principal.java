@@ -1,3 +1,8 @@
+import br.com.trabalhandolistacolecoesdedados.aula2.PerishableProduct;
+import br.com.trabalhandolistacolecoesdedados.aula1.Pessoa;
+import br.com.trabalhandolistacolecoesdedados.aula2.Product;
+import br.com.trabalhandolistacolecoesdedados.aula3.*;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -6,7 +11,7 @@ import java.util.Optional;
 public class Principal {
     public static void main(String[] args) {
 
-        //Aula 01: Coleção de filmes
+    //Aula 01: Coleção de filmes
 
         Pessoa pessoa1 = new Pessoa("Douglas", 39);
         Pessoa pessoa2 = new Pessoa("Talita", 35);
@@ -21,7 +26,7 @@ public class Principal {
         System.out.println(listaDePessoa.get(0));
         System.out.println(listaDePessoa);
 
-        ////Aula 01: Código revisado pela IA
+    ////Aula 01: Código revisado pela IA
 
         var pessoa4 = new Pessoa("João", 28);
         var pessoa5 = new Pessoa("Maria", 32);
@@ -34,12 +39,12 @@ public class Principal {
         System.out.println("Primeira pessoa na lista: " + pessoas.get(0));
         pessoas.forEach(System.out::println);
 
-        //Aula 02: Construindo objetos
+    //Aula 02: Construindo objetos
 
         var product1 = new Product("Caneta", 2.5, 100);
         var product2 = new Product("Caderno", 15.0, 50);
         var product3 = new Product("Mochila", 120.0, 20);
-        var perishableProduct = new PerishableProduct("Café", 38.0, 30, 2026 - 06 - 30);
+        var perishableProduct = new PerishableProduct("Café", 38.0, 30, 2026-06-30);
 
         List<Product> products = new ArrayList<>(List.of(product1, product2, product3));
         System.out.println("\nImprimendo resultado do exercício da aula 2\n");
@@ -103,8 +108,9 @@ public class Principal {
 
         Optional<BankAccount> accountWithHighestBalance = accounts.stream().max(Comparator.comparingDouble(BankAccount::getBalance));
         accountWithHighestBalance.ifPresent(account ->
-                        System.out.println("Conta com maior saldo: " + account)
+                System.out.println("Conta com maior saldo: " + account)
         );
 
     }
 }
+

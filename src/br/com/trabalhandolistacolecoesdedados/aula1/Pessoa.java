@@ -1,3 +1,5 @@
+package br.com.trabalhandolistacolecoesdedados.aula1;
+
 public class Pessoa {
     private String nome;
     private int idade;
@@ -8,7 +10,7 @@ public class Pessoa {
     }
 
     public String toString() {
-        return "Pessoa{" +
+        return "br.com.trabalhandolistacolecoesdedados.aula1.Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", idade=" + idade +
                 '}';
