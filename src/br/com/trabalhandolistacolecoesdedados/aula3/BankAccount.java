@@ -1,3 +1,5 @@
+package br.com.trabalhandolistacolecoesdedados.aula3;
+
 public class BankAccount {
     private int accountNumber;
     private double balance;
@@ -13,7 +15,7 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "BankAccount{" +
+        return "br.com.trabalhandolistacolecoesdedados.aula3.BankAccount{" +
                 "accountNumber=" + accountNumber +
                 ", balance=" + balance +
                 '}';

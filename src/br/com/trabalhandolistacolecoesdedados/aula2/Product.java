@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package br.com.trabalhandolistacolecoesdedados.aula2;
 
 public class Product {
     private String name;
@@ -17,7 +16,7 @@ public class Product {
     }
 
     public String toString() {
-        return "Product{" +
+        return "br.com.trabalhandolistacolecoesdedados.aula2.Product{" +
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +

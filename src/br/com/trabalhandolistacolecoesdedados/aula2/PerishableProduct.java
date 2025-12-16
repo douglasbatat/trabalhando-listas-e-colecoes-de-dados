@@ -1,4 +1,6 @@
-public class PerishableProduct extends Product{
+package br.com.trabalhandolistacolecoesdedados.aula2;
+
+public class PerishableProduct extends Product {
     private int expirationDate;
 
     public PerishableProduct(String name, double price, int quantity, int expirationDate) {
