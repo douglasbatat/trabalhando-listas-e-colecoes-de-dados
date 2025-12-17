@@ -2,11 +2,9 @@ import br.com.trabalhandolistacolecoesdedados.aula2.PerishableProduct;
 import br.com.trabalhandolistacolecoesdedados.aula1.Pessoa;
 import br.com.trabalhandolistacolecoesdedados.aula2.Product;
 import br.com.trabalhandolistacolecoesdedados.aula3.*;
+import br.com.trabalhandolistacolecoesdedados.aula4.Title;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class Principal {
     public static void main(String[] args) {
@@ -110,6 +108,42 @@ public class Principal {
         accountWithHighestBalance.ifPresent(account ->
                 System.out.println("Conta com maior saldo: " + account)
         );
+
+        //Aula 04: Lista de objetos distintos
+
+        ////Exercício 1
+        System.out.println("\nResultado do exercício da aula 4\n");
+        System.out.println("Resultado do exercício 1\n");
+        List<Integer> numbers = new ArrayList<>(List.of(5, 10, 3, 8, 1, 7));
+        numbers.sort(null);
+        System.out.println("Números ordenados: " + numbers);
+
+        ////Exercício 2, 3, 4 e 5
+        System.out.println("\nResultado do exercício 2, 3, 4 e 5\n");
+
+        List<Title> booksList;
+
+        booksList = new ArrayList<>(List.of(
+                new Title("Senhor dos Anéis: A Sociedade do Anel"),
+                new Title("Game of Thrones: A Fúria dos Reis"),
+                new Title("Harry Potter - A Pedra Filosofal"),
+                new Title("O Hobbit"),
+                new Title("As Crônicas de Nárnia: O Leão, a Feitice e o Guarda-Roupa")
+        ));
+
+        System.out.println("Lista de livros juvenil:\n");
+        Title.orderAndPrint("ArrayList", booksList);
+
+        booksList = new LinkedList<>(List.of(
+                new Title("Chapelzinho Vermelho"),
+                new Title("Branca de Neve"),
+                new Title("Cinderela"),
+                new Title("A Bela Adormecida"),
+                new Title("A Pequena Sereia")
+        ));
+
+        System.out.println("\nLista de livros infantil:\n");
+        Title.orderAndPrint("LinkedList", booksList);
 
     }
 }
