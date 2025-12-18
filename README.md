@@ -2,8 +2,8 @@ Aqui estarão listados os enunciados dos exercícios "Desafio: hora da prática"
 
 *****Aula 01: Coleção de filmes*****
 
-1. Crie uma classe br.com.trabalhandolistacolecoesdedados.aula1.Pessoa com atributos como nome, idade, e um método toString que represente esses atributos.
-2. No método main da classe Principal, crie um ArrayList de br.com.trabalhandolistacolecoesdedados.aula1.Pessoa chamado listaDePessoas.
+1. Crie uma classe Pessoa com atributos como nome, idade, e um método toString que represente esses atributos.
+2. No método main da classe Principal, crie um ArrayList de Pessoa chamado listaDePessoas.
 3. Adicione pelo menos três pessoas à lista utilizando o método add.
 4. Imprima o tamanho da lista utilizando o método size.
 5. Imprima a primeira pessoa da lista utilizando o método get.
@@ -19,8 +19,16 @@ Aqui estarão listados os enunciados dos exercícios "Desafio: hora da prática"
 *****Aula 03: Lista de objetos distintos*****
 
 1. Crie um ArrayList de strings e utilize um loop foreach para percorrer e imprimir cada elemento da lista.
-2. Crie uma classe br.com.trabalhandolistacolecoesdedados.aula3.Animal e uma classe Cachorro que herda de br.com.trabalhandolistacolecoesdedados.aula3.Animal. Em seguida, crie um objeto da classe Cachorro e faça o casting para a classe br.com.trabalhandolistacolecoesdedados.aula3.Animal.
+2. Crie uma classe Animal e uma classe Cachorro que herda de Animal. Em seguida, crie um objeto da classe Cachorro e faça o casting para a classe br.com.trabalhandolistacolecoesdedados.aula3.Animal.
 3. Modifique o Exercício 2 para incluir uma verificação usando instanceof para garantir que o objeto seja do tipo correto antes de fazer o casting.
 4. Crie uma classe Produto com propriedades como nome e preço. Em seguida, crie uma lista de produtos e utilize um loop para calcular e imprimir o preço médio dos produtos.
 5. Crie uma interface Forma com um método calcularArea(). Implemente a interface em duas classes, por exemplo, Circulo e Quadrado. Em seguida, crie uma lista de formas (objetos da interface Forma) e utilize um loop para calcular e imprimir a área de cada forma.
 6. Crie uma classe ContaBancaria com propriedades como número da conta e saldo. Em seguida, crie uma lista de contas bancárias com diferentes saldos. Utilize um loop para encontrar e imprimir a conta com o maior saldo.
+
+*****Aula 04: Ordenando dados*****
+
+1. Crie uma lista de números inteiros e utilize o método Collections.sort para ordená-la em ordem crescente. Em seguida, imprima a lista ordenada.
+2. Crie uma classe Titulo com um atributo nome do tipo String. Implemente a interface Comparable na classe para que seja possível ordenar uma lista de objetos Titulo.
+3. No Exercício 2, crie alguns objetos da classe Titulo e adicione-os a uma lista. Utilize o método Collections.sort para ordenar a lista e, em seguida, imprima os títulos ordenados.
+4. Crie uma lista utilizando a interface List e instancie-a tanto como ArrayList quanto como LinkedList. Adicione elementos e imprima a lista, mostrando que é possível trocar facilmente a implementação.
+5. Modifique o Exercício 4 para declarar a variável de lista como a interface List, demonstrando o uso de polimorfismo.
