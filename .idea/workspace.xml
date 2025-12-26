@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d72bb4b-d8b0-418a-b223-d93d3bb0d322" name="Changes" comment="Commit após implementar exercícios da aula 3.">
-      <change afterPath="$PROJECT_DIR$/src/br/com/trabalhandolistacolecoesdedados/aula4/Title.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2025_10_17_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2025_10_17__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2025_10_34_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_12_2025_10_34__Changes_.xml" beforeDir="false" />
+    <list default="true" id="2d72bb4b-d8b0-418a-b223-d93d3bb0d322" name="Changes" comment="Commit após implementar exercícios da aula 4.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +38,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.IntegerList.executor": "Run",
-    "Application.Principal.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "aula4",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Projetos/payment-service"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.IntegerList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Principal.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;aula4&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projetos/facility-service&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Principal">
     <configuration name="IntegerList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.trabalhandolistacolecoesdedados.aula4.IntegerList" />
@@ -121,14 +114,23 @@
       <option name="project" value="LOCAL" />
       <updated>1765002031522</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit após implementar exercícios da aula 4.">
+      <option name="closed" value="true" />
+      <created>1765995052090</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765995052090</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit inicial." />
     <MESSAGE value="Commit após ajustes com IA." />
     <MESSAGE value="Commit após implementar exercícios da aula 3." />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit após implementar exercícios da aula 3." />
+    <MESSAGE value="Commit após implementar exercícios da aula 4." />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit após implementar exercícios da aula 4." />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
